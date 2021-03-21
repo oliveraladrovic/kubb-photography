@@ -8,6 +8,8 @@
   3. MAIN
   4. SERVICES
   5. PORTFOLIO
+  6. JOURNAL
+  7. ABOUT
 */
 
 /* 
@@ -36,6 +38,10 @@ P {
   width: 100%;
   max-width: 1170px;
   margin: auto;
+}
+
+.center {
+  text-align: center;
 }
 
 h1 {
@@ -86,6 +92,20 @@ h5 {
   color: #444;
   text-align: center;
   margin: 25px 0 15px 0;
+}
+
+h6 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  color: #444;
+  text-align: center;
+  margin: 25px 0 15px 0;
+}
+
+.date {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #999;
 }
 /* --- End of GENERAL STYLES --- */
 
@@ -222,7 +242,7 @@ main p {
 .service-card {
   width: 360px;
   height: 355px;
-  margin: 15px;
+  margin: 0 15px;
   padding: 15px;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.09);
@@ -240,6 +260,7 @@ main p {
 #portfolio {
   background: #2c2c2c;
   padding-top: 1px;
+  text-align: center;
 }
 
 #portfolio h4 {
@@ -275,5 +296,94 @@ a.instagram {
   text-transform: uppercase;
   color: #a6a6a6;
   border: 1px solid #797979;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+a.instagram img {
+  margin: 0 5px -2px 0;
+}
+a.instagram:hover {
+  background: #fff;
+  transition: 0.2s;
 }
 /* --- End of Portfolio */
+/* 
+          6. JOURNAL
+*/
+.journal-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.journal-card {
+  width: 360px;
+  height: 480px;
+  margin: 0 15px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.journal-card img {
+  width: 360px;
+  margin: 25px 0;
+}
+
+.card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #999999;
+  margin-top: 25px;
+}
+
+.card-footer a {
+  color: #999999;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.card-footer a:hover {
+  color: #fff;
+  background: #28b8d8;
+  transition: 0.2s;
+}
+
+.journal-card .likes img {
+  width: 10px;
+  margin: 0;
+}
+/* End of Journal */
+/* 
+          7. ABOUT
+*/
+#about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-about {
+  width: calc(50% - 15px);
+}
+
+.right-about {
+  width: calc(50% - 15px);
+}
+
+#about h4 {
+  text-align: left;
+}
+#about h4::before {
+  content: none;
+}
+/* --- End of About --- */
