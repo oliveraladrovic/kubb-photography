@@ -1,0 +1,19 @@
+/* 
+    TABLE OF CONTENTS
+    
+  1. General Styles
+*/
+
+/* 
+          1. GENERAL STYLES
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+}
