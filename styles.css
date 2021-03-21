@@ -6,6 +6,8 @@
   2.1 Navigation
   2.2 Social networks icons
   3. MAIN
+  4. SERVICES
+  5. PORTFOLIO
 */
 
 /* 
@@ -21,8 +23,13 @@
 
 body {
   background: #f9f9f9;
+}
+
+P {
+  line-height: 22px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  color: #666;
 }
 
 .wrapper {
@@ -47,7 +54,40 @@ h2 {
   text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.75);
   text-transform: uppercase;
 }
-/* --- Endo of GENERAL STYLES --- */
+
+h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+  color: #444;
+  text-align: center;
+  margin: 60px 0 25px 0;
+}
+
+h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #444;
+  text-align: center;
+  margin: 80px 0 30px 0;
+}
+h4::before {
+  margin-right: 15px;
+  content: url('./images/title-lines.png');
+}
+h4::after {
+  margin-left: 15px;
+  content: url('./images/title-lines.png');
+}
+
+h5 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 17px;
+  color: #444;
+  text-align: center;
+  margin: 25px 0 15px 0;
+}
+/* --- End of GENERAL STYLES --- */
 
 /* 
           2. HEADER
@@ -56,7 +96,7 @@ header {
   width: 100%;
   height: 90px;
   background: rgba(0, 0, 0, 0.44);
-  position: absolute;
+  position: fixed;
 }
 
 .header {
@@ -160,3 +200,80 @@ main p {
   text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.75);
 }
 /* --- End of MAIN --- */
+
+/* 
+          4. SERVICES
+*/
+
+.services {
+  width: 100%;
+}
+.services p {
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.service-card {
+  width: 360px;
+  height: 355px;
+  margin: 15px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+/* --- End of Services --- */
+
+/* 
+          5. PORTFOLIO
+*/
+#portfolio {
+  background: #2c2c2c;
+  padding-top: 1px;
+}
+
+#portfolio h4 {
+  color: #d5d5d5;
+}
+#portfolio h4::before {
+  margin-right: 15px;
+  content: url('./images/title-lines_dark.png');
+}
+#portfolio h4::after {
+  margin-left: 15px;
+  content: url('./images/title-lines_dark.png');
+}
+
+.slider {
+  display: flex;
+  overflow: auto;
+  margin-right: 15px;
+}
+
+.slider-item {
+  min-width: 350px;
+  height: 300px;
+  margin-left: 15px;
+  background: #fff;
+}
+
+a.instagram {
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 40px auto 80px auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #a6a6a6;
+  border: 1px solid #797979;
+}
+/* --- End of Portfolio */
