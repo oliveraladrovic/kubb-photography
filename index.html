@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <title>Kubb Photography</title>
+    <link rel="shortcut icon" href="./images/kubb-icon.png" type="image/png" />
   </head>
   <body>
     <header>
@@ -15,40 +16,49 @@
             ><img src="./images/logo.png" alt="Kubb Photography logo"
           /></a>
         </div>
+        <!-- Hamburger menu -->
+        <a href="javascript:void(0);" class="menu-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <!-- End of Hamburger manu -->
         <nav>
           <div class="navigation">
             <ul>
-              <li><a href="#home" class="active">home</a></li>
-              <li><a href="#about">about</a></li>
-              <li><a href="#portfolio">portfolio</a></li>
-              <li><a href="#services">services</a></li>
-              <li><a href="#journal">journal</a></li>
-              <li><a href="#contact">contact</a></li>
+              <li><a href="#home" class="deactivate active">home</a></li>
+              <li><a href="#services" class="deactivate">services</a></li>
+              <li>
+                <a href="#portfolio" class="deactivate">portfolio</a>
+              </li>
+              <li><a href="#journal" class="deactivate">journal</a></li>
+              <li><a href="#about" class="deactivate">about</a></li>
+              <li><a href="#contact" class="deactivate">contact</a></li>
             </ul>
           </div>
           <div class="social">
-            <a href="https://facebook.com" target="_blank"
+            <a href="https://facebook.com" target="_blank" class="deactivate"
               ><img
                 src="./images/facebook.png"
                 width="27"
                 id="facebook"
                 alt="Visit our Facebook profile"
             /></a>
-            <a href="https://twitter.com" target="_blank"
+            <a href="https://twitter.com" target="_blank" class="deactivate"
               ><img
                 src="./images/twitter.png"
                 width="29"
                 id="twitter"
                 alt="Visit our Twitter profile"
             /></a>
-            <a href="https://dribble.com" target="_blank"
+            <a href="https://dribble.com" target="_blank" class="deactivate"
               ><img
                 src="./images/dribble.png"
                 width="32"
                 id="dribble"
                 alt="Visit our Dribble profile"
             /></a>
-            <a href="https://pintrest.com" target="_blank"
+            <a href="https://pintrest.com" target="_blank" class="deactivate"
               ><img
                 src="./images/pintrest.png"
                 width="32"

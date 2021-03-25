@@ -1,5 +1,8 @@
-let links = document.querySelectorAll('.navigation ul li a');
-let sections = document.querySelectorAll('section');
+const links = document.querySelectorAll('.navigation ul li a');
+const sections = document.querySelectorAll('section');
+const header = document.querySelector('header');
+const menuButton = document.querySelector('.menu-button');
+const nav = document.querySelector('nav');
 
 window.addEventListener('scroll', (event) => {
   let fromTop = window.scrollY;
@@ -17,8 +20,25 @@ window.addEventListener('scroll', (event) => {
   });
 
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.querySelector('header').style.background = 'rgba(0, 0, 0, 1)';
+    header.classList.add('dark-back');
   } else {
-    document.querySelector('header').style.background = 'rgba(0, 0, 0, 0.44)';
+    header.classList.remove('dark-back');
   }
+});
+
+menuButton.addEventListener('click', () => {
+  nav.classList.toggle('active-nav');
+  if (nav.classList.contains('active-nav')) {
+    header.classList.add('dark-back');
+  } else {
+    header.classList.remove('dark-back');
+  }
+});
+
+const allLinks = document.querySelectorAll('.deactivate');
+allLinks.forEach((a) => {
+  a.addEventListener('click', () => {
+    nav.classList.remove('active-nav');
+    header.classList.remove('dark-back');
+  });
 });
