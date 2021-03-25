@@ -365,9 +365,9 @@ a.instagram:hover {
 }
 
 .journal-card {
-  width: 360px;
-  height: 480px;
-  margin: 0 15px;
+  width: 100%;
+  max-width: 360px;
+  margin: 5px 15px;
   padding: 15px;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.09);
@@ -487,5 +487,9 @@ a.instagram:hover {
   }
   h2 {
     font-size: 28px;
+  }
+  .journal-card img {
+    width: 110%;
+    margin: 25px 0;
   }
 }
